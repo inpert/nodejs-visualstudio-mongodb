@@ -9,7 +9,7 @@ var port = process.env.port || 1337;
 var app = express();
 app.use(bodyParser());
 
-app.get('/NodeMovieList', function (request, response) {
+app.get('/', function (request, response) {
     response.sendfile("views/MoviesList.html");
 });
 
